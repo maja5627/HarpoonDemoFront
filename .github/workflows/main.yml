@@ -19,7 +19,7 @@ jobs:
         run: docker build -t harpoondemofront .
 
       - name: Tag Docker image
-        run: docker tag harpoondemofront:latest registry.staging.harpooncorp.com/atester/harpoondemofront:dev
+        run: docker tag harpoondemofront:latest registry.staging.harpooncorp.com/atester/harpoondemofront:staging
 
       - name: Push Docker image to Docker Hub
-        run: docker push registry.staging.harpooncorp.com/atester/harpoondemofront:dev
+        run: docker push registry.staging.harpooncorp.com/atester/harpoondemofront:staging
